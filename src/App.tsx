@@ -84,19 +84,19 @@ function App() {
 
   console.log('submittedAnswer', submittedAnswer);
   return (
-    <main className='m-auto max-w-[640px] text-gray-700 '>
+    <main className='m-auto max-w-[640px] p-4 text-gray-700'>
       <section>
         <h1 className='py-4 text-4xl font-bold'>ReMemorize</h1>
       </section>
       <section className='w-full'>
         <div className='rounded-md border'>
-          <div className='flex gap-4 border-b p-4'>
+          <div className='flex flex-wrap gap-4 border-b p-4'>
             {mockData?.map((_, i) => {
               return (
                 <div
                   key={i}
                   className={cn(
-                    'flex size-9 cursor-pointer items-center justify-center rounded-full border hover:bg-gray-100 ',
+                    'flex size-9 cursor-pointer  items-center justify-center rounded-full border hover:bg-gray-100 ',
                     currentAllowedOptionIndex !== i && 'cursor-not-allowed bg-gray-100',
                     isFinished && 'cursor-pointer bg-white',
                     resuls[i] ? (resuls[i]?.isCorrect ? 'border-green-400' : 'border-red-400') : '',
