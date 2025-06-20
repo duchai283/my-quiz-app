@@ -1,0 +1,137 @@
+[
+    {
+        "id": "q1",
+        "question": "What is the capital of France?",
+        "options": [
+            {
+                "id": "q1a",
+                "answer": "Madrid",
+                "isCorrect": false
+            },
+            {
+                "id": "q1b",
+                "answer": "Paris",
+                "isCorrect": true
+            },
+            {
+                "id": "q1c",
+                "answer": "Berlin",
+                "isCorrect": false
+            },
+            {
+                "id": "q1d",
+                "answer": "Rome",
+                "isCorrect": false
+            }
+        ],
+        "isSubmitted": false
+    },
+    {
+        "id": "q2",
+        "question": "Which planet is known as the Red Planet?",
+        "options": [
+            {
+                "id": "q2a",
+                "answer": "Earth",
+                "isCorrect": false
+            },
+            {
+                "id": "q2b",
+                "answer": "Venus",
+                "isCorrect": false
+            },
+            {
+                "id": "q2c",
+                "answer": "Mars",
+                "isCorrect": true
+            },
+            {
+                "id": "q2d",
+                "answer": "Jupiter",
+                "isCorrect": false
+            }
+        ],
+        "isSubmitted": false
+    },
+    {
+        "id": "q3",
+        "question": "What is 5 + 7?",
+        "options": [
+            {
+                "id": "q3a",
+                "answer": "12",
+                "isCorrect": true
+            },
+            {
+                "id": "q3b",
+                "answer": "10",
+                "isCorrect": false
+            },
+            {
+                "id": "q3c",
+                "answer": "14",
+                "isCorrect": false
+            },
+            {
+                "id": "q3d",
+                "answer": "11",
+                "isCorrect": false
+            }
+        ],
+        "isSubmitted": false
+    },
+    {
+        "id": "q4",
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": [
+            {
+                "id": "q4a",
+                "answer": "Mark Twain",
+                "isCorrect": false
+            },
+            {
+                "id": "q4b",
+                "answer": "William Shakespeare",
+                "isCorrect": true
+            },
+            {
+                "id": "q4c",
+                "answer": "Jane Austen",
+                "isCorrect": false
+            },
+            {
+                "id": "q4d",
+                "answer": "Charles Dickens",
+                "isCorrect": false
+            }
+        ],
+        "isSubmitted": false
+    },
+    {
+        "id": "q5",
+        "question": "What is the boiling point of water at sea level?",
+        "options": [
+            {
+                "id": "q5a",
+                "answer": "100°C",
+                "isCorrect": true
+            },
+            {
+                "id": "q5b",
+                "answer": "90°C",
+                "isCorrect": false
+            },
+            {
+                "id": "q5c",
+                "answer": "80°C",
+                "isCorrect": false
+            },
+            {
+                "id": "q5d",
+                "answer": "70°C",
+                "isCorrect": false
+            }
+        ],
+        "isSubmitted": false
+    }
+]

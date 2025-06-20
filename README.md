@@ -1,75 +1,32 @@
-# Vite + React + Typescript + Tanstack Query + Tailwind + Eslint + Prettier
+# 📘 ReMemorize – Quiz App for Personal Learning
 
-This is a starter template to get you going with the must-have libraries for every project.
+## Why I’m building this
 
-The starter includes the following libraries:
-- `@tanstack/react-query`
-- `axios`
-- `tailwind`
-- `classnames`
-- `tailwind-merge`
-- `eslint` and the libraries for the airbnb config
-- `prettier`
+I was inspired by Keven—not by his project, but by his idea that we should **build something meaningful to ourselves** rather than just follow tutorials. It made me pause and ask:
 
-Also, relative paths are setup in the `tsconfig.json` file so that you can easily import anything you need relatively.
+> **Why did I start this course in the first place?**
 
-## How to use this starter
+The answer came from one of Phil's videos. He talked about how building something that relates to your own life gives you the motivation to **push through and truly learn**.
+
+As I reflected on that, I realized it's easy to **forget the little things** I learn in each course section—especially if I don’t revisit them regularly. That’s why I’m building **ReMemorize**:  
+A simple quiz app where I can store useful takeaways and practice them any time.
+
+Each time I take a quiz, it’s like placing another **brick in my foundation of knowledge**.
 
 ---
-Clone the repository:
-```
-https://github.com/Tenacity-Dev/vite-react-ts-tailwind-tanstack-query-eslint-prettier.git
-```
 
-cd into the repository:
-```
-cd vite-react-ts-tailwind-tanstack-query-eslint-prettier
-```
+## ✅ TODO (Core Features)
 
-To make this repository yours:
-```
-rm -rf .git && git init && npm init
-git add .
-git commit -m "Initial commit"
-```
+- [ ] Build a UI to list all questions (e.g., Question 1, 2, 3, 4)
+- [ ] Build a UI to show a question and its options
+- [ ] Handle submission to check whether the selected option is correct
+- [ ] Show the result to the user
+- [ ] After submission, show a **Next** button and hide the **Submit** button
+- [ ] Only allow navigation to the next question after the current one is submitted
 
-Install dependencies:
-```
-npm install
-```
+---
 
-Start the local server:
-```
-npm run web
-```
+## 🌟 Optional Features (For Later)
 
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [ ] Cache user answers locally (e.g., with `localStorage`)
+- [ ] Randomize the order of questions and options so the quiz feels fresh every time
