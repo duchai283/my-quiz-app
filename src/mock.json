@@ -1,26 +1,26 @@
 [
     {
         "id": "q1",
-        "question": "What is the capital of France?",
+        "question": "What is the command to initialize a new Git repository?",
         "options": [
             {
                 "id": "q1a",
-                "answer": "Madrid",
+                "answer": "git start",
                 "isCorrect": false
             },
             {
                 "id": "q1b",
-                "answer": "Paris",
+                "answer": "git init",
                 "isCorrect": true
             },
             {
                 "id": "q1c",
-                "answer": "Berlin",
+                "answer": "git new",
                 "isCorrect": false
             },
             {
                 "id": "q1d",
-                "answer": "Rome",
+                "answer": "git create",
                 "isCorrect": false
             }
         ],
@@ -28,26 +28,26 @@
     },
     {
         "id": "q2",
-        "question": "Which planet is known as the Red Planet?",
+        "question": "Which command stages all changed files for the next commit?",
         "options": [
             {
                 "id": "q2a",
-                "answer": "Earth",
+                "answer": "git push",
                 "isCorrect": false
             },
             {
                 "id": "q2b",
-                "answer": "Venus",
+                "answer": "git commit",
                 "isCorrect": false
             },
             {
                 "id": "q2c",
-                "answer": "Mars",
+                "answer": "git add .",
                 "isCorrect": true
             },
             {
                 "id": "q2d",
-                "answer": "Jupiter",
+                "answer": "git init",
                 "isCorrect": false
             }
         ],
@@ -55,26 +55,26 @@
     },
     {
         "id": "q3",
-        "question": "What is 5 + 7?",
+        "question": "What does 'git clone' do?",
         "options": [
             {
                 "id": "q3a",
-                "answer": "12",
-                "isCorrect": true
+                "answer": "Deletes a repository",
+                "isCorrect": false
             },
             {
                 "id": "q3b",
-                "answer": "10",
+                "answer": "Creates a new commit",
                 "isCorrect": false
             },
             {
                 "id": "q3c",
-                "answer": "14",
-                "isCorrect": false
+                "answer": "Copies a remote repository to your local machine",
+                "isCorrect": true
             },
             {
                 "id": "q3d",
-                "answer": "11",
+                "answer": "Uploads changes to GitHub",
                 "isCorrect": false
             }
         ],
@@ -82,26 +82,26 @@
     },
     {
         "id": "q4",
-        "question": "Who wrote 'Romeo and Juliet'?",
+        "question": "Which command shows the history of commits?",
         "options": [
             {
                 "id": "q4a",
-                "answer": "Mark Twain",
+                "answer": "git history",
                 "isCorrect": false
             },
             {
                 "id": "q4b",
-                "answer": "William Shakespeare",
+                "answer": "git log",
                 "isCorrect": true
             },
             {
                 "id": "q4c",
-                "answer": "Jane Austen",
+                "answer": "git show",
                 "isCorrect": false
             },
             {
                 "id": "q4d",
-                "answer": "Charles Dickens",
+                "answer": "git status",
                 "isCorrect": false
             }
         ],
@@ -109,26 +109,161 @@
     },
     {
         "id": "q5",
-        "question": "What is the boiling point of water at sea level?",
+        "question": "How do you upload your local commits to a GitHub repository?",
         "options": [
             {
                 "id": "q5a",
-                "answer": "100°C",
-                "isCorrect": true
-            },
-            {
-                "id": "q5b",
-                "answer": "90°C",
+                "answer": "git upload",
                 "isCorrect": false
             },
             {
+                "id": "q5b",
+                "answer": "git push",
+                "isCorrect": true
+            },
+            {
                 "id": "q5c",
-                "answer": "80°C",
+                "answer": "git save",
                 "isCorrect": false
             },
             {
                 "id": "q5d",
-                "answer": "70°C",
+                "answer": "git stage",
+                "isCorrect": false
+            }
+        ],
+        "isSubmitted": false
+    },
+    {
+        "id": "q6",
+        "question": "What command is used to check the current status of your Git repo?",
+        "options": [
+            {
+                "id": "q6a",
+                "answer": "git log",
+                "isCorrect": false
+            },
+            {
+                "id": "q6b",
+                "answer": "git status",
+                "isCorrect": true
+            },
+            {
+                "id": "q6c",
+                "answer": "git check",
+                "isCorrect": false
+            },
+            {
+                "id": "q6d",
+                "answer": "git branch",
+                "isCorrect": false
+            }
+        ],
+        "isSubmitted": false
+    },
+    {
+        "id": "q7",
+        "question": "Which command creates a new branch named 'feature'?",
+        "options": [
+            {
+                "id": "q7a",
+                "answer": "git branch feature",
+                "isCorrect": true
+            },
+            {
+                "id": "q7b",
+                "answer": "git new feature",
+                "isCorrect": false
+            },
+            {
+                "id": "q7c",
+                "answer": "git switch feature",
+                "isCorrect": false
+            },
+            {
+                "id": "q7d",
+                "answer": "git checkout feature",
+                "isCorrect": false
+            }
+        ],
+        "isSubmitted": false
+    },
+    {
+        "id": "q8",
+        "question": "What does 'git pull' do?",
+        "options": [
+            {
+                "id": "q8a",
+                "answer": "Sends changes to the remote repo",
+                "isCorrect": false
+            },
+            {
+                "id": "q8b",
+                "answer": "Downloads and merges changes from the remote repo",
+                "isCorrect": true
+            },
+            {
+                "id": "q8c",
+                "answer": "Deletes a local branch",
+                "isCorrect": false
+            },
+            {
+                "id": "q8d",
+                "answer": "Shows branch history",
+                "isCorrect": false
+            }
+        ],
+        "isSubmitted": false
+    },
+    {
+        "id": "q9",
+        "question": "Which command is used to create a new commit?",
+        "options": [
+            {
+                "id": "q9a",
+                "answer": "git stage",
+                "isCorrect": false
+            },
+            {
+                "id": "q9b",
+                "answer": "git add",
+                "isCorrect": false
+            },
+            {
+                "id": "q9c",
+                "answer": "git commit -m \"message\"",
+                "isCorrect": true
+            },
+            {
+                "id": "q9d",
+                "answer": "git message",
+                "isCorrect": false
+            }
+        ],
+        "isSubmitted": false
+    },
+    {
+        "id": "q10",
+        "question": "What command do you use to switch branches?",
+        "options": [
+            {
+                "id": "q10a",
+                "answer": "git switch <branch>",
+                "isCorrect": true
+            },
+            {
+                "id": "q10b",
+                "answer": "git move <branch>",
+                "isCorrect": false
+            },
+            {
+                "id": "q10c",
+                "answer": "git change <branch>",
+                "isCorrect": false
+            },
+            {
+                "id": "q10d",
+                "answer": "git branch <branch>",
                 "isCorrect": false
             }
         ],

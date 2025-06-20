@@ -82,6 +82,7 @@ function App() {
 
   const submittedAnswer = resuls?.find((result) => result.questionId === selectedQuestion?.id);
 
+  console.log('submittedAnswer', submittedAnswer);
   return (
     <main className='m-auto max-w-[640px] text-gray-700 '>
       <section>
@@ -153,7 +154,18 @@ function App() {
                         );
                       })}
                   </div>
-                  {submittedAnswer?.answer && <div className='mt-4'>Your answer: {submittedAnswer?.answer}</div>}
+                  {submittedAnswer?.answer && (
+                    <div
+                      className={`my-4 rounded-md border p-3 text-sm ${
+                        submittedAnswer.isCorrect
+                          ? 'border-green-300 bg-green-50 text-green-700'
+                          : 'border-red-300 bg-red-50 text-red-700'
+                      }`}
+                    >
+                      <strong>Your answer:</strong> {submittedAnswer.answer} <br />
+                      {submittedAnswer.isCorrect ? '✅ Correct!' : '❌ Incorrect.'}
+                    </div>
+                  )}
                   <div className='flex justify-end'>
                     {!isFinished && (
                       <div>
