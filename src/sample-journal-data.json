@@ -1,32 +1,8 @@
 [
   {
-    "question": "What did you learn about Git concept 1?",
-    "answer": "Today I understood how to use git command 1 and why it's important.",
-    "videoURL": "https://example.com/video/git-lesson-1.mp4",
-    "date": "2025-06-22"
-  },
-  {
-    "question": "What did you learn about Git concept 2?",
-    "answer": "Today I understood how to use git command 2 and why it's important.",
-    "videoURL": "https://example.com/video/git-lesson-2.mp4",
-    "date": "2025-06-21"
-  },
-  {
-    "question": "What did you learn about Git concept 3?",
-    "answer": "Today I understood how to use git command 3 and why it's important.",
-    "videoURL": "https://example.com/video/git-lesson-3.mp4",
-    "date": "2025-06-20"
-  },
-  {
-    "question": "What did you learn about Git concept 4?",
-    "answer": "Today I understood how to use git command 4 and why it's important.",
-    "videoURL": "https://example.com/video/git-lesson-4.mp4",
-    "date": "2025-06-19"
-  },
-  {
-    "question": "What did you learn about Git concept 5?",
-    "answer": "Today I understood how to use git command 5 and why it's important.",
-    "videoURL": "https://example.com/video/git-lesson-5.mp4",
-    "date": "2025-06-18"
+    "question": "What is closure?",
+    "answer": "A closure in JavaScript is when a function remembers the variables from where it was created, even if that outer function has already finished running.\n\nFor example, if I define a function inside another function, and return it, that inner function can still access the outer function’s variables.\n\nImagine you have a function that creates a counter. Each time you call the inner function, it increases the count and remembers that value because of the closure.\n\nIt’s useful for things like private variables, making counters, or function factories.",
+    "videoURL": "https://drive.google.com/file/d/1SsbGirzA9gkgx50umq-BXuePQiuv-jOK/view?usp=sharing",
+    "date": "2025-06-23"
   }
 ]
