@@ -1,11 +1,13 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from 'pages/home';
 import Journal from 'pages/journal';
-import Layout from '@components/Layout';
+import { useState } from 'react';
+import Sidebar from '@components/Sidebar';
+import Quizzes from 'pages/quizzes';
+import HeroSection from '@components/HeroSection';
 
 export const Root = '/my-quiz-app';
 
 function App() {
+  const [tab, setTab] = useState<string | null>(null);
   // Why I'm doing this:
   // I was inspired by Keven—not by his project, but by his idea that we should build something ourselves rather than just follow a tutorial.
   // So I asked myself again: why did I take this course? It was because of one of Phil's videos.
@@ -26,13 +28,31 @@ function App() {
   // - Cache the user's answers
   // - Randomize the order of questions and options so the quiz feels fresh each time
 
+  const renderByTab = () => {
+    switch (tab) {
+      case 'quizzes':
+        return (
+          <main className='mx-auto max-w-5xl px-4 py-6'>
+            <Quizzes />
+          </main>
+        );
+      case 'journal':
+        return (
+          <main className='mx-auto max-w-5xl px-4 py-6'>
+            <Journal />
+          </main>
+        );
+      default:
+        return <HeroSection />;
+    }
+  };
   return (
-    <Routes>
-      <Route path={Root} element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path='journal' element={<Journal />} />
-      </Route>
-    </Routes>
+    <div>
+      <header className='border-b shadow-sm'>
+        <Sidebar tab={tab} setTab={setTab} />
+      </header>
+      <div>{renderByTab()}</div>
+    </div>
   );
 }
 

@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero {
+  @apply flex h-screen flex-col items-center justify-center gap-6 bg-contain bg-center text-center;
+  background-image: url('https://images.pexels.com/photos/29252520/pexels-photo-29252520.jpeg');
+}
