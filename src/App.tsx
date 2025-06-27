@@ -3,6 +3,8 @@ import { useState } from 'react';
 import Sidebar from '@components/Sidebar';
 import Quizzes from 'pages/quizzes';
 import HeroSection from '@components/HeroSection';
+import moon from './assets/moon.svg';
+import DarkmodeToggle from '@components/DarkmodeToggle';
 
 export const Root = '/my-quiz-app';
 
@@ -46,12 +48,16 @@ function App() {
         return <HeroSection />;
     }
   };
+
   return (
-    <div>
-      <header className='border-b shadow-sm'>
-        <Sidebar tab={tab} setTab={setTab} />
-      </header>
-      <div>{renderByTab()}</div>
+    <div className='flex max-h-screen flex-col bg-slate-50 md:flex-row dark:bg-black'>
+      <Sidebar tab={tab} setTab={setTab} />
+      <div className='flex flex-1 flex-col'>
+        <header className='dark:bg-darkbg flex h-14 w-full items-center justify-end border-b bg-white px-4 shadow-sm dark:border-b-gray-700'>
+          <DarkmodeToggle />
+        </header>
+        <main className='flex-1 overflow-auto'>{renderByTab()}</main>
+      </div>
     </div>
   );
 }
