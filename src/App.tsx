@@ -3,7 +3,6 @@ import { useState } from 'react';
 import Sidebar from '@components/Sidebar';
 import Quizzes from 'pages/quizzes';
 import HeroSection from '@components/HeroSection';
-import moon from './assets/moon.svg';
 import DarkmodeToggle from '@components/DarkmodeToggle';
 
 export const Root = '/my-quiz-app';
