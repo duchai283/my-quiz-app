@@ -1,7 +1,13 @@
 [
   {
+    "question": "Can you explain how the JavaScript event loop works?",
+    "answer": "**JavaScript is single-threaded**, which means it can only execute one task at a time.\n\nHowever, we often need to handle **asynchronous operations** like timers, network requests, or user events — and we don’t want these tasks to block the main thread. That’s where the **event loop** comes in.\n\nWhen an asynchronous task is triggered, JavaScript hands it off to the **Web APIs** provided by the browser (such as `setTimeout` or `fetch`). These APIs run in the background.\n\nOnce the task completes, its callback is placed in the **callback queue**. The **event loop** constantly checks if the **call stack** is empty. When it is, the event loop moves the next callback from the queue onto the stack and executes it.\n\nThat’s why even a `setTimeout` with 0 milliseconds runs **after** the synchronous code — because it must wait until the current **call stack** is cleared before its callback can be executed.",
+    "videoURL": "https://drive.google.com/file/d/1SsbGirzA9gkgx50umq-BXuePQiuv-jOK/view?usp=sharing",
+    "date": "2025-06-29"
+  },
+  {
     "question": "What is closure?",
-    "answer": "A closure in JavaScript is when a function remembers the variables from where it was created, even if that outer function has already finished running.\n\nFor example, if I define a function inside another function, and return it, that inner function can still access the outer function’s variables.\n\nImagine you have a function that creates a counter. Each time you call the inner function, it increases the count and remembers that value because of the closure.\n\nIt’s useful for things like private variables, making counters, or function factories.",
+    "answer": "A **closure** in JavaScript is when a function remembers the variables from where it was created, even if that outer function has already finished running.\n\nFor example, if I define a function inside another function and return it, that inner function can still access the outer function’s variables.\n\n```js\nfunction createCounter() {\n  let count = 0;\n  return function () {\n    count++;\n    return count;\n  };\n}\n\nconst counter = createCounter();\nconsole.log(counter()); // 1\nconsole.log(counter()); // 2\n```\n\nThis is useful for things like **private variables**, **counters**, or **function factories**.",
     "videoURL": "https://drive.google.com/file/d/1SsbGirzA9gkgx50umq-BXuePQiuv-jOK/view?usp=sharing",
     "date": "2025-06-23"
   }

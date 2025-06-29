@@ -1,5 +1,7 @@
 import journalData from '../../sample-journal-data.json';
-import sampleVideo from '../../assets/IMG_6133.mp4';
+import sampleVideo from '../../assets/videos/IMG_6133.mp4';
+import sampleVideo2 from '../../assets/videos/IMG_6275.mp4';
+import JournalAnswer from '@components/JournalAnswer';
 
 type Journal = {
   question: string;
@@ -7,6 +9,8 @@ type Journal = {
   videoURL: string;
   date: string;
 };
+
+const videos = [sampleVideo2, sampleVideo];
 
 const Journal = () => {
   const data: Journal[] = journalData;
@@ -44,12 +48,14 @@ const Journal = () => {
             >
               <div className='mb-2 text-xs text-gray-500 dark:text-white'>{entry.date}</div>
               <h2 className='mb-3 text-2xl font-bold text-gray-800 dark:text-white'>{entry.question}</h2>
-              <p className='whitespace-pre-line leading-relaxed text-gray-700 dark:text-white'>{entry.answer}</p>
+
+              <JournalAnswer answer={entry.answer} />
+
               <video
                 className='mt-4 max-h-[480px] w-full rounded-lg border object-contain dark:border-gray-700'
                 controls
               >
-                <source src={sampleVideo} type='video/mp4' />
+                <source src={videos[index]} type='video/mp4' />
                 Your browser does not support the video tag.
               </video>
             </article>
