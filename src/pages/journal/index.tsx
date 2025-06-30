@@ -1,6 +1,7 @@
 import journalData from '../../sample-journal-data.json';
 import sampleVideo from '../../assets/videos/IMG_6133.mp4';
 import sampleVideo2 from '../../assets/videos/IMG_6275.mp4';
+import sampleVideo3 from '../../assets/videos/IMG_6311.mp4';
 import JournalAnswer from '@components/JournalAnswer';
 
 type Journal = {
@@ -10,7 +11,7 @@ type Journal = {
   date: string;
 };
 
-const videos = [sampleVideo2, sampleVideo];
+const videos = [sampleVideo3, sampleVideo2, sampleVideo];
 
 const Journal = () => {
   const data: Journal[] = journalData;
@@ -19,7 +20,7 @@ const Journal = () => {
     <main className='scroll-smoot min-h-screen text-gray-800'>
       <div className='mx-auto max-w-6xl px-4 py-8 lg:flex lg:gap-8'>
         {/* Sidebar */}
-        <aside className='dark:bg-darkbg mb-8 w-full rounded-xl border border-gray-200 bg-white p-5 shadow-sm lg:sticky lg:top-10 lg:mb-0 lg:w-64 lg:self-start dark:border-gray-700 dark:text-white'>
+        <aside className='mb-8 w-full rounded-xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-darkbg dark:text-white lg:sticky lg:top-10 lg:mb-0 lg:w-64 lg:self-start'>
           <h2 className='mb-4 text-xl font-bold'>📚 Journal</h2>
           <ul className='space-y-2 text-sm'>
             {data.map((entry, index) => (
@@ -36,7 +37,7 @@ const Journal = () => {
         </aside>
 
         {/* Divider */}
-        <div className='hidden w-px bg-gray-200 lg:block dark:bg-gray-700' />
+        <div className='hidden w-px bg-gray-200 dark:bg-gray-700 lg:block' />
 
         {/* Main Content */}
         <section className='flex-1 space-y-12'>
@@ -44,7 +45,7 @@ const Journal = () => {
             <article
               key={index}
               id={`entry-${index}`}
-              className='dark:bg-darkbg scroll-mt-28 rounded-xl border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700'
+              className='scroll-mt-28 rounded-xl border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-darkbg'
             >
               <div className='mb-2 text-xs text-gray-500 dark:text-white'>{entry.date}</div>
               <h2 className='mb-3 text-2xl font-bold text-gray-800 dark:text-white'>{entry.question}</h2>

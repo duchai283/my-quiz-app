@@ -1,5 +1,11 @@
 [
   {
+    "question": "What is a higher-order function in JavaScript, and how have you used it in real projects?",
+    "answer": "A **higher-order function** is a function that either **takes one or more functions as arguments**, or **returns another function** as its result.\n\nCommon examples are built-in functions like `map`, `filter`, `reduce`, or `sort`, which take callback functions to operate on arrays.\n\nIn my projects, I use higher-order functions all the time — for example, I’ve created a custom **debounce** function that returns a delayed version of another function. I’ve also written wrappers that add **logging**, **authorization checks**, or **error handling**.\n\nThis pattern helps me write **cleaner, more reusable code**, especially when applying shared behavior across different functions.",
+    "videoURL": "https://drive.google.com/file/d/1SsbGirzA9gkgx50umq-BXuePQiuv-jOK/view?usp=sharing",
+    "date": "2025-07-01"
+  },
+  {
     "question": "Can you explain how the JavaScript event loop works?",
     "answer": "**JavaScript is single-threaded**, which means it can only execute one task at a time.\n\nHowever, we often need to handle **asynchronous operations** like timers, network requests, or user events — and we don’t want these tasks to block the main thread. That’s where the **event loop** comes in.\n\nWhen an asynchronous task is triggered, JavaScript hands it off to the **Web APIs** provided by the browser (such as `setTimeout` or `fetch`). These APIs run in the background.\n\nOnce the task completes, its callback is placed in the **callback queue**. The **event loop** constantly checks if the **call stack** is empty. When it is, the event loop moves the next callback from the queue onto the stack and executes it.\n\nThat’s why even a `setTimeout` with 0 milliseconds runs **after** the synchronous code — because it must wait until the current **call stack** is cleared before its callback can be executed.",
     "videoURL": "https://drive.google.com/file/d/1SsbGirzA9gkgx50umq-BXuePQiuv-jOK/view?usp=sharing",
